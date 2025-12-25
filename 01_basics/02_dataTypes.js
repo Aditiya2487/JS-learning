@@ -24,4 +24,23 @@ console.log(typeof undefined);
 //Primitives are stored directly in the location that the variable accesses : 7 types of primitives
 // String, Number, Boolean, Undefined, Null, Symbol, BigInt
 
+const score = 100;
+const name1 = "Aditya";
+const isLoggedIn = true;
+const outsideTemp = null;
+const firstName = undefined;
+let middleName;
+const lastName = Symbol("Last Name");
+const bigNumber = 1234567890123456789012345678901234567890n;
+console.table([
+  score,
+  name1,
+  isLoggedIn,
+  outsideTemp,
+  firstName,
+  middleName,
+  lastName,
+  bigNumber,
+]);
+
 //Reference types are objects and are stored as a reference (address) to a location in memory : // /Arrays, Functions, Objects
