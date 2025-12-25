@@ -27,9 +27,9 @@ console.log(false === 0); // false
 console.log("5" == 5); // true
 console.log("5" === 5); // false
 
-console.log(null > 0); // false
-console.log(null >= 0); // true
-console.log(null == 0); // false
+console.log(null > 0); // false   JS converts null to 0 for >
+console.log(null >= 0); // true   JS converts null to 0 for >=
+console.log(null == 0); // false  JS does NOT convert null for ==
 
 console.log(undefined > 0); // false
 console.log(undefined < 0); // false
@@ -43,3 +43,7 @@ console.log("apple" > "Apple"); // true
 console.log("2" > "12"); // true
 console.log("2" < "12"); // false
 console.log("2" == "12"); // false
+
+/* 🧠 The Core Truth (Memorize This)
+Comparison operators (< > <= >=) and equality operators (==) follow DIFFERENT rules.
+This is not opinion. It’s JavaScript spec. */
