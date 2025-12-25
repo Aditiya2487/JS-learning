@@ -54,8 +54,8 @@ console.log("a === c :", a === c); //false, different types
 console.log("End of operations demonstration.");
 
 console.log(1 + 2 + "3"); // "33"
-console.log(1 + "2" + "3"); //123
-console.log("1" + 2 + 3); //"123"
+console.log(1 + "2" + "3"); // "123"  Once a string enters +, everything becomes string concatenation.
+console.log("1" + 2 + 3); //"123"  Order matters. JS evaluates left to right.
 console.log("1" + (2 + 3)); //"15"
 console.log(+"123"); //123
 console.log(+"123abc"); //NaN
@@ -65,3 +65,15 @@ returns OLD value → THEN increments
 
 Pre-increment (++x)
 increments FIRST → THEN returns */
+
+/* The Golden Rules (Burn These In)
+🔑 Rule 1: + is dangerous
+If both operands are numbers → addition
+If either operand is string → concatenation
+
+🔑 Rule 2: Evaluation is left → right
+"a" + 1 + 2   // "a12"
+"a" + (1+2)  // "a3"
+
+🔑 Rule 3: Parentheses beat everything
+If you want control — use parentheses. */
