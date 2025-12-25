@@ -20,9 +20,9 @@ console.log("Comparison Operations:");
 console.log("a == b :", a == b);
 console.log("a != b :", a != b);
 console.log("a === b :", a === b);
+console.log("a < b :", a < b);
 console.log("a !== b :", a !== b);
 console.log("a > b :", a > b);
-console.log("a < b :", a < b);
 console.log("a >= b :", a >= b);
 console.log("a <= b :", a <= b);
 console.log("Logical Operations:");
@@ -31,9 +31,9 @@ console.log("a > 0 || b < 0 :", a > 0 || b < 0);
 console.log("!(a > b) :", !(a > b));
 console.log("Bitwise Operations:");
 console.log("a & b :", a & b);
+console.log("~a :", ~a);
 console.log("a | b :", a | b);
 console.log("a ^ b :", a ^ b);
-console.log("~a :", ~a);
 console.log("a << 1 :", a << 1);
 console.log("a >> 1 :", a >> 1);
 
@@ -50,4 +50,18 @@ console.log("a + c =", a + c); //string concatenation
 console.log("a * c =", a * c); //multiplication after type coercion
 console.log("a == c :", a == c); //true due to type coercion
 console.log("a === c :", a === c); //false, different types
+// console.log(a + b + c); //mixed addition and concatenation
 console.log("End of operations demonstration.");
+
+console.log(1 + 2 + "3"); // "33"
+console.log(1 + "2" + "3"); //123
+console.log("1" + 2 + 3); //"123"
+console.log("1" + (2 + 3)); //"15"
+console.log(+"123"); //123
+console.log(+"123abc"); //NaN
+
+/*Post-increment (x++)
+returns OLD value → THEN increments
+
+Pre-increment (++x)
+increments FIRST → THEN returns */
