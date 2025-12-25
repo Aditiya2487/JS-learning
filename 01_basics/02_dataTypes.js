@@ -24,4 +24,4 @@ console.log(typeof undefined);
 //Primitives are stored directly in the location that the variable accesses : 7 types of primitives
 // String, Number, Boolean, Undefined, Null, Symbol, BigInt
 
-//Reference types are objects and are stored as a reference (address) to a location in memory : Arrays, Functions, Objects
+//Reference types are objects and are stored as a reference (address) to a location in memory : // /Arrays, Functions, Objects
