@@ -44,3 +44,9 @@ console.table([
 ]);
 
 //Reference types are objects and are stored as a reference (address) to a location in memory : // /Arrays, Functions, Objects
+const herAge = { age: 21 }; //object literal
+const hobbies = ["reading", "coding", "music"]; //array literal
+function sayHello() {
+  //function literal
+  console.log("Hello Aditya");
+}
