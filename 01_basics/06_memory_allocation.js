@@ -35,6 +35,8 @@ console.log(obj2.name); // "Bob"
 function modifyValues(primValue, refValue) {
   primValue = primValue + 10;
   refValue.name = "Charlie";
+  console.log(primValue); // Modified primitive value
+  console.log(refValue.name); // Modified object property
 }
 
 let num = 5;
