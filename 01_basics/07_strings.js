@@ -12,3 +12,6 @@ console.log(gameName[0]); //Accessing first character 'C'
 console.log(gameName.__proto__); //Prototype of String Object
 
 console.log(gameName.length); //Length of the string
+console.log(gameName.toUpperCase()); //Converts to Uppercase
+console.log(gameName.toLowerCase()); //Converts to Lowercase
+console.log(gameName.charAt(4)); //Accessing fifth character 's'
