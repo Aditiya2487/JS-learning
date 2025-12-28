@@ -39,3 +39,9 @@ console.log(Math.log(1)); //0  //Natural logarithm of 1
 console.log(Math.log10(1000)); //3  //Base 10 logarithm of 1000
 console.log(Math.sin(Math.PI / 2)); //1  //Sine of 90 degrees (PI/2 radians)
 console.log(Math.cos(0)); //1  //Cosine of 0 degrees
+
+const min = 10;
+const max = 20;
+
+const randomInt = Math.floor(Math.random() * (max - min + 1)) + min; //Random integer between min and max (inclusive)
+console.log(randomInt);
